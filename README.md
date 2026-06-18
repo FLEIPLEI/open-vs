@@ -1,85 +1,85 @@
 # OPEN VS — Developer Security Toolkit
 
-> Ein einzelnes Python-Script mit 116+ Sicherheits-Tools für Entwickler, Pentester und Security-Researcher. Keine Installation, keine Dependencies — einfach starten.
+> 116+ security tools in a single Python file — no pip, no setup required. Just run it.
 
 ---
 
-## Download & Start
+## Download & Install
 
 ### Windows
 ```powershell
-# 1. Python installieren falls noch nicht: https://python.org
-# 2. Datei herunterladen
+# 1. Install Python if not already: https://python.org
+# 2. Download the file
 curl -O https://raw.githubusercontent.com/FLEIPLEI/open-vs/main/open_vs.py
-# 3. Starten
+# 3. Run
 python open_vs.py
 ```
 
 ### Linux / macOS
 ```bash
-# 1. Herunterladen
+# Download
 wget https://raw.githubusercontent.com/FLEIPLEI/open-vs/main/open_vs.py
-# oder
+# or
 curl -O https://raw.githubusercontent.com/FLEIPLEI/open-vs/main/open_vs.py
 
-# 2. Starten
+# Run
 python3 open_vs.py
 ```
 
 ### Android (Termux)
 ```bash
-# 1. Termux aus F-Droid installieren (nicht Play Store)
+# 1. Install Termux from F-Droid (not Play Store)
 # 2. In Termux:
 pkg update && pkg install python
 curl -O https://raw.githubusercontent.com/FLEIPLEI/open-vs/main/open_vs.py
 python open_vs.py
 ```
 
-### Oder als ZIP herunterladen
-Oben rechts auf **Code → Download ZIP** klicken, entpacken, dann:
+### Download as ZIP
+Click **Code → Download ZIP** at the top right, extract it, then:
 ```bash
 python open_vs.py
 ```
 
 ---
 
-## Was ist OPEN VS?
+## What is OPEN VS?
 
-OPEN VS ist ein All-in-One Security Toolkit das komplett in einer einzigen `.py` Datei läuft. Kein `pip install`, keine virtuellen Umgebungen, keine Abhängigkeiten — nur Python 3.8+ und die Datei.
+OPEN VS is an all-in-one security toolkit that runs entirely from a single `.py` file. No `pip install`, no virtual environments, no dependencies — just Python 3.8+ and the file.
 
-Du startest das Tool, gibst eine Tool-Nummer ein (z.B. `116`) oder suchst nach einem Begriff (z.B. `admin`) und das Tool startet sofort.
+Start the tool, enter a tool number (e.g. `116`) or search for a keyword (e.g. `admin`) and the tool launches immediately.
 
 ---
 
 ## Features
 
-- **116 Tools** in einer einzigen Datei
-- Läuft auf **Windows, Linux und Android/Termux**
-- Nur **Python Standard-Library** — kein pip nötig
-- Sauberes Terminal-UI mit Farben
-- Tools laufen automatisch weiter bis etwas gefunden wird (Ctrl+C zum Stoppen)
-- Detaillierte Berichte mit Schritt-für-Schritt Anleitungen
+- **116 tools** in a single file
+- Runs on **Windows, Linux and Android/Termux**
+- **Python standard library only** — no pip required
+- Clean terminal UI with color output
+- Tools keep scanning until something is found (Ctrl+C to stop)
+- Detailed reports with step-by-step exploitation and fix instructions
 
 ---
 
-## Tool-Kategorien
+## Tool Categories
 
-| Kategorie | Beispiele |
-|-----------|-----------|
-| **Netzwerk** | Port-Scanner, ARP-Scanner, DNS-Lookup, WHOIS, Traceroute, Nmap-Wrapper |
-| **Web Security** | SQLi-Tester, XSS-Finder, Admin-Bypass, CORS-Tester, HTTP-Header-Analyse |
-| **Auth & Bypass** | Admin Auth Bypass (116), Default-Creds, Cookie-Forgery, Header-Bypass |
-| **Passwörter** | Hash-Cracker (MD5/SHA), Passwort-Generator, Stärke-Check |
-| **APIs** | JWT-Analyzer, API-Security-Tester, OAuth-Checker |
-| **Minecraft** | MC-Server-Scanner, Plugin-Sicherheits-Check, MOTD-Analyse |
-| **Krypto** | Hash-Tools, Base64, Caesar, Hex-Konverter |
-| **OSINT** | IP-Info, Domain-Checker, Email-Validator, Geo-Lookup |
-| **System** | Port-Listener, Environment-Scanner, Prozess-Checker |
-| **Sonstiges** | Fake-Daten-Generator, QR-Code, WiFi-Scanner, uvm. |
+| Category | Examples |
+|----------|----------|
+| **Network** | Port scanner, ARP scan, DNS lookup, WHOIS, Traceroute |
+| **Web Security** | SQLi tester, XSS finder, Admin bypass, CORS tester, HTTP header analysis |
+| **Auth & Bypass** | Admin Auth Bypass (116), Default credentials, Cookie forgery, Header bypass |
+| **Passwords** | Hash cracker (MD5/SHA), Password generator, Strength checker |
+| **APIs** | JWT analyzer, API security tester, OAuth checker |
+| **Minecraft** | MC server scanner, Plugin security check, MOTD analysis |
+| **Crypto** | Hash tools, Base64, Caesar cipher, Hex converter |
+| **OSINT** | IP info, Domain checker, Email validator, Geo lookup |
+| **System** | Port listener, Environment scanner, Process checker |
+| **Other** | Fake data generator, QR code, WiFi scanner, and more |
 
 ---
 
-## Benutzung
+## Usage
 
 ```
 python open_vs.py
@@ -89,39 +89,39 @@ python open_vs.py
 ╔══════════════════════════════════════════════════════════════════════════╗
 ║  OPEN VS — Developer Security Toolkit                                    ║
 ╠══════════════════════════════════════════════════════════════════════════╣
-║  Tool-Nummer eingeben (1-116) oder Begriff suchen                        ║
+║  Enter a tool number (1-116) or search by keyword                        ║
 ╚══════════════════════════════════════════════════════════════════════════╝
 
 > 116
 ```
 
-- Zahl eingeben → Tool direkt starten
-- Begriff eingeben (z.B. `sql`, `port`, `admin`) → passende Tools anzeigen
-- `h` → Alle Tools auflisten
-- `q` → Beenden
+- Enter a number → launch tool directly
+- Enter a keyword (e.g. `sql`, `port`, `admin`) → show matching tools
+- `h` → list all tools
+- `q` → quit
 
 ---
 
-## Voraussetzungen
+## Requirements
 
-- Python **3.8 oder höher**
-- Keine weiteren Pakete nötig
-
----
-
-## Rechtlicher Hinweis
-
-Dieses Tool ist ausschließlich für **autorisierte Sicherheitstests und Bildungszwecke** gedacht.  
-Nutze es nur auf Systemen die dir gehören oder für die du ausdrückliche Genehmigung hast.  
-Der Autor übernimmt keine Haftung für Missbrauch.
+- Python **3.8 or higher**
+- No additional packages needed
 
 ---
 
-## Plattform-Unterstützung
+## Disclaimer
 
-| Plattform | Status |
-|-----------|--------|
-| Windows 10/11 | ✅ Vollständig |
-| Linux (Ubuntu, Debian, Arch, ...) | ✅ Vollständig |
-| Android (Termux) | ✅ Vollständig |
-| macOS | ✅ Sollte funktionieren (ungetestet) |
+This tool is intended for **authorized security testing and educational purposes only.**
+Only use it on systems you own or have explicit permission to test.
+The author is not responsible for any misuse.
+
+---
+
+## Platform Support
+
+| Platform | Status |
+|----------|--------|
+| Windows 10/11 | ✅ Fully supported |
+| Linux (Ubuntu, Debian, Arch, ...) | ✅ Fully supported |
+| Android (Termux) | ✅ Fully supported |
+| macOS | ✅ Should work (untested) |
