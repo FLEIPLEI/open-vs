@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.log
+bypass_report_*.txt
+*.tmp
