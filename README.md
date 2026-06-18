@@ -10,7 +10,7 @@
 ```powershell
 # 1. Python installieren falls noch nicht: https://python.org
 # 2. Datei herunterladen
-curl -O https://raw.githubusercontent.com/einar/open-vs/master/open_vs.py
+curl -O https://raw.githubusercontent.com/FLEIPLEI/open-vs/main/open_vs.py
 # 3. Starten
 python open_vs.py
 ```
@@ -18,9 +18,9 @@ python open_vs.py
 ### Linux / macOS
 ```bash
 # 1. Herunterladen
-wget https://raw.githubusercontent.com/einar/open-vs/master/open_vs.py
+wget https://raw.githubusercontent.com/FLEIPLEI/open-vs/main/open_vs.py
 # oder
-curl -O https://raw.githubusercontent.com/einar/open-vs/master/open_vs.py
+curl -O https://raw.githubusercontent.com/FLEIPLEI/open-vs/main/open_vs.py
 
 # 2. Starten
 python3 open_vs.py
@@ -31,7 +31,7 @@ python3 open_vs.py
 # 1. Termux aus F-Droid installieren (nicht Play Store)
 # 2. In Termux:
 pkg update && pkg install python
-curl -O https://raw.githubusercontent.com/einar/open-vs/master/open_vs.py
+curl -O https://raw.githubusercontent.com/FLEIPLEI/open-vs/main/open_vs.py
 python open_vs.py
 ```
 
