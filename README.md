@@ -10,7 +10,7 @@
 ```powershell
 # 1. Install Python if not already: https://python.org
 # 2. Download the file
-curl -O https://raw.githubusercontent.com/FLEIPLEI/open-vs/main/open_vs.py
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/FLEIPLEI/open-vs/main/open_vs.py" -OutFile "open_vs.py"
 # 3. Run
 python open_vs.py
 ```
